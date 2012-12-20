@@ -1,7 +1,8 @@
 \documentclass[a4paper]{article}
-\usepackage{english} %deutsches Datumsformat
+\usepackage{english}
  
-\usepackage{tabularx}
+\usepackage{setspace}
+\onehalfspacing
 
 \usepackage{graphicx}
 \usepackage{graphics}
@@ -12,26 +13,17 @@
 \usepackage{lmodern} %schönere Schriftart (Latex-Standard verbessert)
 \usepackage[T1]{fontenc} %korrekter Umbruch von Worten mit Umlauten
 
-\usepackage{paralist}
-\usepackage{amsmath} 
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{stmaryrd} %Symbol für Blitz mit \lightning
-
-\usepackage{pstricks} %ZEICHNEN
-\usepackage{pstricks-add}
-%\let\psgrid\relax %alle Grids in PSTricks ausblenden 
-
 %\usepackage{adjustbox} %Elemente gemäß Seitenrändern resizen
 \usepackage{fancyhdr} %Seitenlayout
 
 \pagestyle{fancy}
 
 \usepackage{titlesec}
-
-\usepackage{showframe} %zeigt Seitenbegrenzungen
-\usepackage{blindtext}
+\usepackage{paralist}
 \usepackage{multicol}
+
+%\usepackage{showframe} %zeigt Seitenbegrenzungen
+\usepackage{blindtext}
 
 \fancyhf{} %alle Kopf- und Fu�zeilenfelder bereinigen
 \fancyhead[L]{\today} %Kopfzeile links
@@ -42,20 +34,18 @@
 
 \begin{document}
 
-\title{Teams and Virtual Teams}
-\author{Johannes Deselaers, Yannis Kommana, Adrian Sieber}
+\include{titlepage}
 
-\maketitle
-
-\section{Ein Abschnitt}
-
-\blindtext
-
-\begin{multicols}{2}[\section{Dieser Abschnittstitel wird einspaltig gesetzt}]
-
-\blindtext
-
-\end{multicols}
+\input{chapters/Abstract}
+\input{chapters/Definition}
+\input{chapters/VirtualTeams}
+\input{chapters/SpecialConditions}
+\input{chapters/kickoff}
+\input{chapters/feats}
+\input{chapters/technology}
+\input{chapters/Tools}
+\input{chapters/OurWork}
+\input{chapters/conclusion}
 
 \bibliographystyle{plainnat}
 \bibliography{Quellen}
