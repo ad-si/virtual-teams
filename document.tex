@@ -23,7 +23,6 @@
 \usepackage{multicol}
 
 %\usepackage{showframe} %zeigt Seitenbegrenzungen
-\usepackage{blindtext}
 
 \fancyhf{} %alle Kopf- und Fu�zeilenfelder bereinigen
 \fancyhead[L]{\today} %Kopfzeile links
@@ -36,7 +35,9 @@
 
 \include{titlepage}
 
-\input{chapters/Abstract}
+\tableofcontents 
+
+\include{chapters/Abstract}
 \input{chapters/Definition}
 \input{chapters/VirtualTeams}
 \input{chapters/SpecialConditions}
@@ -47,7 +48,7 @@
 \input{chapters/OurWork}
 \input{chapters/conclusion}
 
-\bibliographystyle{plainnat}
+\bibliographystyle{unsrtnat}
 \bibliography{Quellen}
  
 \end{document}
